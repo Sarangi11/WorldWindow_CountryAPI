@@ -79,15 +79,6 @@ The compiled assets live in the dist/ folder.
 
 Netlify
 
-Push to GitHub.
-
-On Netlify, New site from Git → select your repo.
-
-Build command: npm run build; Publish directory: dist.
-
-Vercel
-
-Import project on vercel.com.
 
 Framework: Vite; Build: npm run build; Output: dist.
 
