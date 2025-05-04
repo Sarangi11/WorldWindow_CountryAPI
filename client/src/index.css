@@ -1,0 +1,34 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    /* Tell the browser we support both light & dark for form controls, etc. */
+    color-scheme: light dark;
+  }
+
+  body {
+    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100;
+  }
+
+  /* Make all text inputs, selects, buttons, etc pick up a dark background & text */
+  input,
+  select,
+  textarea,
+  button {
+    @apply bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100;
+  }
+
+  /* Placeholder text */
+  input::placeholder,
+  textarea::placeholder {
+    @apply text-gray-400 dark:text-gray-500;
+  }
+   /* Inherit the wrapper’s text color for all these tags */
+   h1, h2, h3, h4, h5, h6,
+  p, span, li, a, strong, em {
+    @apply text-gray-900 dark:text-gray-100;
+  }
+}
