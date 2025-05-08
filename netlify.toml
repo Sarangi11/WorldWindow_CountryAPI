@@ -1,4 +1,11 @@
+[build]
+  # if your Vite project lives in a sub-folder called "client", point base there;
+  # otherwise remove `base` or set it to "." and adjust publish to "dist"
+  base    = "client"  
+  command = "npm install && npm run build"
+  publish = "client/dist"
+
 [[redirects]]
-  from = "/*"
-  to   = "/index.html"
+  from   = "/*"
+  to     = "/index.html"
   status = 200
