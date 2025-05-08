@@ -1,9 +1,0 @@
-[build]
-  base    = "client"                     # adjust if your app isn’t in “client”
-  command = "npm install --legacy-peer-deps && npm run build"
-  publish = "client/dist"                # where Vite spits out index.html
-
-[[redirects]]
-  from   = "/*"
-  to     = "/index.html"
-  status = 200
